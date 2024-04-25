@@ -1,23 +1,32 @@
 # Startup Funding Analysis
 
-The startup funding analysis project provides comprehensive tools for exploring and understanding startup funding data. Designed for entrepreneurs, investors, and researchers, this repository leverages Python and libraries such as pandas and numpy to offer robust functionality for processing and visualizing startup funding data.
+This project analyzes startup funding data from a CSV file to extract insights such as trends in investments, popular startup locations, funding distribution by city, investment types, industries, and top investors.
 
-## Features
+## Trend of Investments Over the Years
 
-- **Data Processing**: Utilizing pandas and numpy, the project facilitates efficient processing of startup funding datasets, ensuring data integrity and consistency.
-- **Visualization**: The repository offers powerful visualization capabilities, enabling users to uncover funding trends and patterns through intuitive charts and graphs.
-- **Trend Analysis**: Through in-depth analysis, users can identify trends in funding amounts, investment sectors, and investor behaviors, aiding in informed decision-making.
-- **Interactive Exploration**: Interactive visualizations allow for dynamic exploration of funding data, empowering users to delve deeper into specific aspects of interest.
-- **Community Contributions**: Open to contributions from the community, the project welcomes enhancements and additional features to further enrich the analysis toolkit.
+The script `investment_trend.py` analyzes the trend of investments over the years. It calculates the total number of fundings done each year, plots a line graph showing the trend, and prints the year-wise total number of fundings in ascending order.
+
+## Cities Chosen for Starting a Startup
+
+The script `startup_cities.py` identifies the top 10 Indian cities with the most number of startups. It cleans the city names, counts the startups in each city, and visualizes the data with a pie chart. Additionally, it prints the city names and the number of startups in each city.
+
+## Funding Received by Cities
+
+The script `city_funding.py` finds the top 10 Indian cities with the most amount of funding received. It calculates the percentage of funding each city has received among the top 10 Indian cities and prints the city and percentage with two decimal places after rounding off.
+
+## Distribution of Funding by Investment Type
+
+The script `investment_distribution.py` analyzes the distribution of funding by investment type. It identifies the percentage of amount funded for each investment type and visualizes the data with a pie chart. Additionally, it prints the investment type and percentage of amount funded with two decimal places after rounding off.
+
+## Companies Getting Easily Funded
+
+The script `company_funding.py` determines the top 5 industries and the percentage of the total amount funded to each industry. It cleans the industry names, calculates the percentage of funding for each industry, and visualizes the data with a pie chart. Additionally, it prints the industry name and percentage of the amount funded with two decimal places after rounding off.
+
+## Top Investors
+
+The script `top_investors.py` identifies the investors who have invested the maximum number of times. It counts the number of times each investor has invested and prints the investor name along with the number of times invested as an integer value.
 
 ## Dataset
 
-The project utilizes datasets containing information about startup funding rounds, including details such as funding amount, investor names, startup sectors, and funding dates. This data serves as the foundation for the analysis and visualization tools provided by the project.
+The dataset used for analysis is the 'startup_funding.csv' file.
 
-## How to Contribute
-
-Contributions to the project are highly encouraged! Whether it's adding new analysis features, improving visualization capabilities, or enhancing documentation, all contributions are valuable in advancing the project's functionality and usability.
-
-## Next Steps
-
-Explore the project repository to discover powerful tools for analyzing startup funding data. Get involved, contribute, and leverage the insights gained to make informed decisions in the dynamic world of startup investment.
